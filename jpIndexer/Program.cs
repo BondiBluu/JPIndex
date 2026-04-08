@@ -1,6 +1,14 @@
 ﻿using jpIndexer.Scripts;
+using Microsoft.Data.Sqlite;
 
-Console.WriteLine("Hello, World!");
+//using connectionString to connect to the DB
+string connectionString = @"Data Source=jpIndexer.db";
+
+using(var connection = new SqliteConnection(connectionString))
+{
+  
+}
+
 StartScript.StartingPoint();
 
   static void Start(){}
