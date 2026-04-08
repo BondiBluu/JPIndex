@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "smafzs8+Jlw=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\bamid\\Documents\\Code\\JPIndex\\jpIndexer\\jpIndexer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\bamid\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.14\\microsoft.netcore.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\bamid\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.14\\microsoft.windowsdesktop.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\bamid\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.14\\microsoft.aspnetcore.app.ref.9.0.14.nupkg.sha512",
+    "C:\\Users\\bamid\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\9.0.14\\microsoft.netcore.app.host.win-x64.9.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

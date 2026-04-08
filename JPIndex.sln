@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jpIndexer", "jpIndexer\jpIndexer.csproj", "{918A5090-E6FD-E4C4-1BD2-0027A899F362}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{918A5090-E6FD-E4C4-1BD2-0027A899F362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{918A5090-E6FD-E4C4-1BD2-0027A899F362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{918A5090-E6FD-E4C4-1BD2-0027A899F362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{918A5090-E6FD-E4C4-1BD2-0027A899F362}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {437C2BA3-3522-4824-9F1A-30101A29AF97}
+	EndGlobalSection
+EndGlobal

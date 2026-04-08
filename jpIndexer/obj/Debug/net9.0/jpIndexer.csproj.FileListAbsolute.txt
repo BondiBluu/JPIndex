@@ -1,0 +1,14 @@
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\bin\Debug\net9.0\jpIndexer.exe
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\bin\Debug\net9.0\jpIndexer.deps.json
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\bin\Debug\net9.0\jpIndexer.runtimeconfig.json
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\bin\Debug\net9.0\jpIndexer.dll
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\bin\Debug\net9.0\jpIndexer.pdb
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\jpIndexer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\jpIndexer.AssemblyInfoInputs.cache
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\jpIndexer.AssemblyInfo.cs
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\jpIndexer.csproj.CoreCompileInputs.cache
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\jpIndexer.dll
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\refint\jpIndexer.dll
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\jpIndexer.pdb
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\jpIndexer.genruntimeconfig.cache
+C:\Users\bamid\Documents\Code\JPIndex\jpIndexer\obj\Debug\net9.0\ref\jpIndexer.dll
