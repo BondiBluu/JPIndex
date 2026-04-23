@@ -4,6 +4,8 @@ using Microsoft.Data.Sqlite;
 //using connectionString to connect to the DB
 string connectionString = @"Data Source=jpIndexer.db";
 
+StartScript.StartingPoint();
+
 using(var connection = new SqliteConnection(connectionString))
 {
   
