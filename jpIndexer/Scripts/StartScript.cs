@@ -1,5 +1,3 @@
-namespace jpIndexer.Scripts
-{
     public static class StartScript
     {
         public static void StartingPoint()
@@ -8,4 +6,3 @@ namespace jpIndexer.Scripts
             Console.ReadLine();
         }
     }
-}
