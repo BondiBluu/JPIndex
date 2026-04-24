@@ -16,6 +16,34 @@ public static class ViewScript
             List<JPIndex> tableData = new List<JPIndex>();
 
             SqliteDataReader reader = tableCmd.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    tableData.Add(
+                        new JPIndex
+                        {
+                            Id = reader.GetInt32(0),
+                            Kanji = reader.GetString(1),
+                            Hiragana = reader.GetString(2),
+                            Romaji = reader.GetString(3),
+                            English = reader.GetString(4)
+                        }
+                    );
+                }
+            }
+            else
+            {
+                Console.WriteLine("No rows found");
+            }
+
+            connection.Close();
+
+            foreach (JPIndex index in tableData)
+            {
+                Console.WriteLine($"Kanji: {index.Kanji}\tHira/Kata: {index.Hiragana}\tRomaji: {index.Romaji}\tEnglish: {index.English}");
+            }
         }
     }
 
