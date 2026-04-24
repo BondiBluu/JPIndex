@@ -28,7 +28,7 @@ public static class MainPageScript
                     ViewScript.GetRecords(connectionString);
                 break;
                 case "2":
-                    InsertScript.Insert();
+                    InsertScript.Insert(connectionString);
                 break;
                 case "3":
                     DeleteScript.Delete();

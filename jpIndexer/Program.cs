@@ -1,5 +1,8 @@
 ﻿using Microsoft.Data.Sqlite;
 
+Console.OutputEncoding = System.Text.Encoding.UTF8;
+Console.InputEncoding = System.Text.Encoding.UTF8;
+
 //using connectionString to connect to the DB
 string connectionString = @"Data Source=jpIndexer.db";
 

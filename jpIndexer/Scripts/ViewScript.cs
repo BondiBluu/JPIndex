@@ -5,6 +5,8 @@ public static class ViewScript
 {
     public static void GetRecords(string connectionString)
     {
+        Console.InputEncoding = System.Text.Encoding.UTF8;
+
         using (var connection = new SqliteConnection(connectionString))
         {
             connection.Open();
