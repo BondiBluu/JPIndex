@@ -24,5 +24,5 @@ using(var connection = new SqliteConnection(connectionString))
   connection.Close();
 }
 
-MainPageScript.MainMenu();
+MainPageScript.MainMenu(connectionString);
 

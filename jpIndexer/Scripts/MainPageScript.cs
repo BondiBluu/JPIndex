@@ -1,6 +1,6 @@
 public static class MainPageScript
 {
-    public static void MainMenu()
+    public static void MainMenu(string connectionString)
     {
         bool closeApp = false;
 
@@ -21,12 +21,11 @@ public static class MainPageScript
             switch (commandInput)
             {
                 case "0":
-                    Console.WriteLine("Leaving.");
                     closeApp = true;
                     Environment.Exit(0);
                 break;
                 case "1":
-                    ViewScript.GetRecords();
+                    ViewScript.GetRecords(connectionString);
                 break;
                 case "2":
                     InsertScript.Insert();
@@ -41,7 +40,7 @@ public static class MainPageScript
                     SearchScript.Search();
                 break;
                 default:
-                Console.WriteLine("\nInvalid Command. Please type a number from 0 to 4.\n");
+                Console.WriteLine("\nInvalid Command. Please type a number from 0 to 5.\n");
                 break;
             }
         }
