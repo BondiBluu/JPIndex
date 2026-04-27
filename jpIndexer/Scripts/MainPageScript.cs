@@ -11,9 +11,9 @@ public static class MainPageScript
             Console.WriteLine("\nType 0 to Close Application");
             Console.WriteLine("\nType 1 to View All");
             Console.WriteLine("\nType 2 to Insert Record");
+            Console.WriteLine("\nType 3 to Search for Record");
             Console.WriteLine("\nType 3 to Delete Record");
-            Console.WriteLine("\nType 4 to Update Record\n");
-            Console.WriteLine("\nType 5 to Search All");
+            Console.WriteLine("\nType 5 to Update Record\n");
             
 
             string commandInput = Console.ReadLine();
@@ -31,13 +31,13 @@ public static class MainPageScript
                     InsertScript.Insert(connectionString);
                 break;
                 case "3":
-                    DeleteScript.Delete();
+                    SearchScript.Search(connectionString);
                 break;
                 case "4":
-                    UpdateScript.Update();
+                    DeleteScript.Delete();
                 break;
                 case "5":
-                    SearchScript.Search();
+                    UpdateScript.Update();
                 break;
                 default:
                 Console.WriteLine("\nInvalid Command. Please type a number from 0 to 5.\n");
