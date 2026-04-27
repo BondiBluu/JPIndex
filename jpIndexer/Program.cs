@@ -2,7 +2,7 @@
 
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 Console.InputEncoding = System.Text.Encoding.UTF8;
-
+System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
 //using connectionString to connect to the DB
 string connectionString = @"Data Source=jpIndexer.db";
 
