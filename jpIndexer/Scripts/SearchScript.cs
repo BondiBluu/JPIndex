@@ -9,7 +9,7 @@ public static class SearchScript
         {
             MainPageScript.MainMenu(connectionString);
         }
-        else if (!Enum.TryParse(typeof(SearchOptions),option.ToUpper(), out _))
+        else if (!Enum.IsDefined(typeof(SearchOptions), option.ToUpper()))
         {
             Console.WriteLine("Invalid command.\n");
             Search(connectionString);
@@ -23,6 +23,6 @@ public static class SearchScript
 
     public static void SearchForWord(string searchCategory)
     {
-        
+        Console.WriteLine("Searching.");
     }
 }
