@@ -1,8 +1,11 @@
+using Microsoft.Data.Sqlite;
+
 public static class SearchScript
 {
     public static void Search(string connectionString)
     {
-        Console.Write("What would you like to search by?\n\nKanji\nHiragana(hira) or Katakana(kana)\nRomaji\nEnglish\nPress 0 to exit\n");
+        string whatToSearchBy;
+        Console.Write("\nWhat would you like to search by?\n\nKanji\n\nHiragana(hira) or Katakana(kana)\n\nRomaji\n\nEnglish\n\nPress 0 to exit\n\n");
         string option = Console.ReadLine();
 
         if(option == "0")
@@ -16,13 +19,78 @@ public static class SearchScript
         }
         else
         {
-            SearchForWord(option);
+            whatToSearchBy = SearchForWord(option);
+
+            Console.Write("\nType in word to search: ");
+            string wordToSearch = Console.ReadLine();
+
+            SQLSearch(connectionString, whatToSearchBy, wordToSearch);
         }
 
     }
 
-    public static void SearchForWord(string searchCategory)
+    public static string SearchForWord(string searchCategory)
     {
-        Console.WriteLine("Searching.");
+        switch (searchCategory.ToUpper())
+        {
+            case "KANJI":
+                return "Kanji";
+            case "HIRAGANA":
+            case "HIRA":
+            case "KATAKANA":
+            case "KANA":
+                return "Hiragana";
+            case "ROMAJI":
+                return "Romaji";
+            case "ENGLISH":
+                return "English";
+            default:
+                return "Invalid";
+        }
+    }
+
+    public static void SQLSearch(string connectionString, string searchCategory, string wordToSearch)
+    {
+        using (SqliteConnection connection = new SqliteConnection(connectionString))
+        {
+            connection.Open();
+
+            SqliteCommand tableCmd = connection.CreateCommand();
+
+            tableCmd.CommandText = 
+                $"SELECT * FROM japanese_index WHERE {searchCategory} LIKE '%{wordToSearch}%'";
+
+            List<JPIndex> tableData = new List<JPIndex>();
+
+            SqliteDataReader reader = tableCmd.ExecuteReader();
+
+            if (reader.HasRows)
+            {
+                while (reader.Read())
+                {
+                    tableData.Add(
+                        new JPIndex
+                        {
+                            Id = reader.GetInt32(0),
+                            Kanji = reader.GetString(1),
+                            Hiragana = reader.GetString(2),
+                            Romaji = reader.GetString(3),
+                            English = reader.GetString(4)
+                        }
+                    );
+                }
+            }
+            else
+            {
+                Console.WriteLine("No rows found");
+            }
+
+            connection.Close();
+
+            foreach (JPIndex index in tableData)
+            {
+                Console.WriteLine($"Kanji: {index.Kanji}\tHira/Kata: {index.Hiragana}\tRomaji: {index.Romaji}\tEnglish: {index.English}");
+            }
+        }
     }
 }
