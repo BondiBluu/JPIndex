@@ -34,7 +34,7 @@ public static class MainPageScript
                     SearchScript.Search(connectionString);
                 break;
                 case "4":
-                    DeleteScript.Delete();
+                    DeleteScript.Delete(connectionString);
                 break;
                 case "5":
                     UpdateScript.Update();
