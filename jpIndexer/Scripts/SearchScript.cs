@@ -19,7 +19,7 @@ public static class SearchScript
         }
         else
         {
-            whatToSearchBy = SearchForWord(option);
+            whatToSearchBy = FindWordOption.SearchForWord(option);
 
             Console.Write("\nType in word to search: ");
             string wordToSearch = Console.ReadLine();
@@ -27,26 +27,6 @@ public static class SearchScript
             SQLSearch(connectionString, whatToSearchBy, wordToSearch);
         }
 
-    }
-
-    public static string SearchForWord(string searchCategory)
-    {
-        switch (searchCategory.ToUpper())
-        {
-            case "KANJI":
-                return "Kanji";
-            case "HIRAGANA":
-            case "HIRA":
-            case "KATAKANA":
-            case "KANA":
-                return "Hiragana";
-            case "ROMAJI":
-                return "Romaji";
-            case "ENGLISH":
-                return "English";
-            default:
-                return "Invalid";
-        }
     }
 
     public static void SQLSearch(string connectionString, string searchCategory, string wordToSearch)
