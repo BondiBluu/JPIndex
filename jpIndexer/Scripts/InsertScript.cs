@@ -4,6 +4,7 @@ public static class InsertScript
 {
     public static void Insert(string connectionString)
     {
+
         string kanji = GetStringInput("Input Kanji, if any: ");
 
         string hiraKana = GetStringInput("Input Hiragana or Katakana: ");
@@ -26,6 +27,7 @@ public static class InsertScript
                 connection.Close();
         }
         
+        Insert(connectionString);
     }
 
     public static string GetStringInput(string message)
