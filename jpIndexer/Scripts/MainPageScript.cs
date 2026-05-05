@@ -37,7 +37,7 @@ public static class MainPageScript
                     DeleteScript.Delete(connectionString);
                 break;
                 case "5":
-                    UpdateScript.Update();
+                    UpdateScript.Update(connectionString);
                 break;
                 default:
                 Console.WriteLine("\nInvalid Command. Please type a number from 0 to 5.\n");

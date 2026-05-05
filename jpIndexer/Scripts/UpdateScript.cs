@@ -1,7 +1,8 @@
 public static class UpdateScript
 {
-    public static void Update()
+    public static void Update(string connectionString)
     {
-        Console.WriteLine("Updating.");
+        Console.Clear();
+        ViewScript.GetRecords(connectionString);
     }
 }

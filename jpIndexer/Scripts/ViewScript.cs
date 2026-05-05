@@ -44,7 +44,7 @@ public static class ViewScript
 
             foreach (JPIndex index in tableData)
             {
-                Console.WriteLine($"Kanji: {index.Kanji}\tHira/Kata: {index.Hiragana}\tRomaji: {index.Romaji}\tEnglish: {index.English}");
+                Console.WriteLine($"\n\nKanji: {index.Kanji}\tHira/Kata: {index.Hiragana}\tRomaji: {index.Romaji}\tEnglish: {index.English}");
             }
         }
     }
