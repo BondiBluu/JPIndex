@@ -5,13 +5,13 @@ public static class InsertScript
     public static void Insert(string connectionString)
     {
 
-        string kanji = GetStringInput("Input Kanji, if any: ");
+        string kanji = GetStringInput.GetInput("Input Kanji, if any: ");
 
-        string hiraKana = GetStringInput("Input Hiragana or Katakana: ");
+        string hiraKana = GetStringInput.GetInput("Input Hiragana or Katakana: ");
 
-        string romaji = GetStringInput("Input Romaji:");
+        string romaji = GetStringInput.GetInput("Input Romaji:");
 
-        string english = GetStringInput("Input English translation: ");
+        string english = GetStringInput.GetInput("Input English translation: ");
 
         using (SqliteConnection connection = new SqliteConnection(connectionString))
         {
@@ -30,12 +30,5 @@ public static class InsertScript
         Insert(connectionString);
     }
 
-    public static string GetStringInput(string message)
-    {
-        Console.WriteLine(message);
 
-        string? input = Console.ReadLine();
-
-        return input ?? string.Empty;
-    }
 }
