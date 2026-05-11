@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("jpIndexer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9bdf1ec5f2237cf965ef02b0ca5a872b90ac5e03")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44c4325a2f1bbba395cd1b9213bb263d54005bec")]
 [assembly: System.Reflection.AssemblyProductAttribute("jpIndexer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("jpIndexer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
